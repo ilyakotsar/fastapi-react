@@ -1,0 +1,133 @@
+.light-theme {
+  --color: #000;
+  --muted-color: #4d4d4d;
+  --bg-color: #dcdcdc;
+  --card-color: #f0f0f0;
+  --input-color: #fff;
+  --border-color: #cacaca;
+}
+.dark-theme {
+  --color: #fff;
+  --muted-color: #999999;
+  --bg-color: rgb(15, 15, 15);
+  --card-color: rgb(30, 30, 30);
+  --input-color: #000;
+  --border-color: #303030;
+}
+body {
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+.serif {
+  font-family: 'Times New Roman', Times, serif;
+}
+.muted-color {
+  color: var(--muted-color);
+}
+.card {
+  background-color: var(--card-color);
+  border-radius: 18px;
+  border: solid var(--border-color) 1.5px;
+  box-shadow: none;
+}
+.auth-form {
+  max-width: 310px;
+}
+.header {
+  height: 40px;
+  padding: 5px;
+  background-color: var(--bg-color);
+  border-bottom: solid var(--border-color) 1.5px;
+}
+.header-link {
+  color: var(--muted-color);
+  padding: 3px 10px 3px 10px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.header-link:hover {
+  color: var(--color);
+  background-color: var(--card-color);
+}
+.form-control, .input, .button, .header-link {
+  border-radius: 9px;
+}
+.input, .button {
+  height: 35px;
+  display: block;
+  outline: none;
+  transition: 0.2s;
+}
+.input {
+  color: var(--color);
+  background-color: var(--bg-color);
+  border: solid var(--bg-color) 2px;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+}
+.input:hover {
+  border-color: var(--border-color);
+}
+.input:focus {
+  background-color: var(--input-color);
+  border-color: rgb(33, 107, 182);
+}
+.valid-input:hover, .valid-input:focus {
+  border-color: rgb(32, 141, 65) !important;
+}
+.invalid-input:hover, .invalid-input:focus {
+  border-color: rgb(184, 51, 77) !important;
+}
+.valid-input {
+  border-color: rgba(32, 141, 65, 0.6);
+}
+.invalid-input {
+  border-color: rgba(184, 51, 77, 0.6);
+}
+.button {
+  border: none;
+  padding: 0px;
+}
+.submit-button {
+  color: #fff;
+  background-color: rgb(61, 123, 185);
+}
+.submit-button:hover {
+  background-color: rgb(33, 107, 182);
+  box-shadow: 0px 2px 5px rgba(33, 107, 182, 0.5);
+  transform: scale(1.02);
+}
+.submit-button:active {
+  background-color: rgb(84, 143, 202);
+  transform: scale(0.98);
+  box-shadow: none;
+}
+.icon-button {
+  color: rgb(100, 100, 100);
+  background-color: rgba(0, 0, 0, 0);
+  width: 28px;
+  height: 28px;
+  border-radius: 15px;
+  padding: 0px 5px 5px 5px;
+}
+.icon-button:hover {
+  background-color: var(--card-color);
+}
+.password input {
+  padding-right: 32px;
+}
+.password .toggle {
+  height: 0px;
+}
+.password .toggle button {
+  position: relative;
+  top: -31.5px;
+  right: 4px;
+}
+.link {
+  color: rgb(33, 107, 182);
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: solid underline rgb(33, 107, 182) 1px;
+}
